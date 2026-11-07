@@ -18,6 +18,8 @@ public final class SkyResources3BlockTagsProvider extends BlockTagsProvider {
 
     @Override
     protected void addTags(final HolderLookup.Provider lookupProvider) {
+        this.tag(BlockTags.LOGS).add(ModBlocks.PETRIFIED_WOOD.get());
+        this.tag(BlockTags.PLANKS).add(ModBlocks.PETRIFIED_PLANKS.get());
         this.tag(BlockTags.MINEABLE_WITH_PICKAXE).add(
                 ModBlocks.COMPRESSED_COAL_BLOCK.get(),
                 ModBlocks.COAL_INFUSED_BLOCK.get(),

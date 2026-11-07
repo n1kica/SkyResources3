@@ -23,6 +23,7 @@ public final class SkyResources3ItemTagsProvider extends ItemTagsProvider {
 
     @Override
     protected void addTags(final HolderLookup.Provider lookupProvider) {
+        this.tag(ItemTags.LOGS).add(ModItems.PETRIFIED_WOOD.get());
         this.tag(ItemTags.PLANKS).add(ModItems.PETRIFIED_PLANKS.get());
         this.tag(commonItemTag("ores/iron")).add(Items.IRON_ORE, Items.DEEPSLATE_IRON_ORE);
         this.tag(commonItemTag("ores/gold")).add(Items.GOLD_ORE, Items.DEEPSLATE_GOLD_ORE, Items.NETHER_GOLD_ORE);
